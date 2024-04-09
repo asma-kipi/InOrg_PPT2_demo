@@ -11,15 +11,17 @@
 }
 h2{
     font-size:xx-large;
-    color: #e1cdb2;
+    color: #E1CDB2;
     font-weight: bolder;
+    animation: slide 3s linear;
 }
 h3{
     color:#e1cdb2;
 }
 p{
-    color: #ffeace;
-    margin-left : 10px
+    color: #FFEACE;
+    margin-left : 10px;
+    animation: slide 3s linear;
 }
 nav{
     height: 60px;
@@ -41,3 +43,17 @@ nav{
 .title{
     font-weight: 1000;
 }
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .animated-text {
+    animation: slide 3s infinite;
+  }
